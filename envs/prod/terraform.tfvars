@@ -1,8 +1,8 @@
 
 #Assing values to variables depending on client
-client_name             = "AkKosher-V1"
+client_name             = "Ensitech"
 environment             = "testing"
-project_name            = "Kosher-V1-Software"
+project_name            = "Tech_Challenge"
 
 provider_region         = "us-east-1"
 
@@ -12,7 +12,7 @@ subnet_block            = "10.0.0.0/24"
 
 availability_zone       = "us-east-1a"
 
-ec2_imageid             = "ami-07eaeeffc12642329"    ## chetu_withappfiles_withapachefiles_withgui_02jan2024
+ec2_imageid             = "ami-084568db4383264d4"    ##ubuntu 24
 ec2_instancetype        = "t2.micro"
 ec2_decryptkeyname      = "koshere"
 ec2_disksize            = "80"
