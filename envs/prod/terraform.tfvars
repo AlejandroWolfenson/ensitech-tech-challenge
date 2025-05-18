@@ -17,7 +17,7 @@ availability_zone       = "us-east-1a"
 
 ec2_imageid             = "ami-084568db4383264d4"    ##ubuntu 24
 ec2_instancetype        = "t2.micro"
-ec2_decryptkeyname      = "ensitech-challenge"
+ec2_decryptkeyname      = "ensitech-challenge"     ##use any key you like here
 ec2_disksize            = "80"
 ec2_disktype            = "gp2"
 
