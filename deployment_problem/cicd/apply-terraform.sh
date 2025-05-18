@@ -7,7 +7,7 @@ set -eu
 cd ..
 
 # get into directory where tf files are
-cd deployment_problem/envs/prod
+cd envs/prod
 
 # initialize terraform
 terraform init
