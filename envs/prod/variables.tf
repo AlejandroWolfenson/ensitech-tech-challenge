@@ -18,15 +18,15 @@ variable "provider_region" {
   type        = string
 }
 
-variable "provider_accesskey" {
-  description = "access key from account to authenticate"
-  type        = string
-}
+#variable "provider_accesskey" {
+#  description = "access key from account to authenticate"
+#  type        = string
+#}
 
-variable "provider_secretkey" {
-  description = "secret key from account to authenticate"
-  type        = string
-}
+#variable "provider_secretkey" {
+#  description = "secret key from account to authenticate"
+#  type        = string
+#}
 
 variable "vpc_block" {
   description = "The CIDR block for the VPC"
