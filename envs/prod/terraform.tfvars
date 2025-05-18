@@ -1,5 +1,8 @@
 
 #Assing values to variables depending on client
+
+## This was triggered from AWS CodeBuild. AWS credentials defined as env variables in code build project
+
 client_name             = "Ensitech"
 environment             = "testing"
 project_name            = "Tech_Challenge"

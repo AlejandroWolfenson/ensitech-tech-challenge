@@ -26,7 +26,7 @@ terraform {
 provider "aws" {
   
   region = var.provider_region
-#  access_key = var.provider_accesskey
+#  access_key = var.provider_accesskey     ENV VARS IN CODE BUILD
 #  secret_key = var.provider_secretkey
 }
 
