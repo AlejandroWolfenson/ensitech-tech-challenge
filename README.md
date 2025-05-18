@@ -18,7 +18,7 @@ INTEGERS ARRAY PROBLEM
     - array_right_to_left [24 12 4 1]
     - final_result= array_left_to_right x array_right_to_left = 24 12 8 6
 
-  DEPLOYMENT PROBLEM
+DEPLOYMENT PROBLEM
   * The CI CD was implemented using AWS CodeBuild to deploy an EC2 within AWS
   * AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY are environment variables defined in AWS CodeBuild. If implemented using another CI CD tool keep this in mind
   * Within envs/prod the backend.tf file points to ensitech-challenge S3 storage that keeps the terraform.tfstate file for this project. Keep this in mind and change backend config accordingly
