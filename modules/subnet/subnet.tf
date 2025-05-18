@@ -14,7 +14,7 @@ resource "aws_subnet" "sn" {
   )
 }
 
-#Associate subnet with route table
+
 resource "aws_route_table_association" "associate-routetable" {
   subnet_id      = aws_subnet.sn.id
   route_table_id = var.routetable_id
