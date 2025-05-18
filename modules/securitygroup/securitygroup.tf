@@ -10,7 +10,7 @@ resource "aws_security_group" "sg" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = var.block_allow_ingress  # Adjust to restrict access to a specific IP range if needed
+    cidr_blocks = var.block_allow_ingress  
   }
 
   ingress {
@@ -18,7 +18,7 @@ resource "aws_security_group" "sg" {
     from_port   = 80
     to_port     = 80
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]  # Adjust to restrict access to a specific IP range if needed
+    cidr_blocks = ["0.0.0.0/0"]  
   }
 
   ingress {
@@ -26,7 +26,7 @@ resource "aws_security_group" "sg" {
     from_port   = 443
     to_port     = 443
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]  # Adjust to restrict access to a specific IP range if needed
+    cidr_blocks = ["0.0.0.0/0"]  
   }
 
   egress {
