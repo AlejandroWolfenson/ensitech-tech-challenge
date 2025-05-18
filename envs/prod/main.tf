@@ -11,6 +11,8 @@ locals {
                             "Client"      = "${var.client_name}",
                             "Project"     = "${var.project_name}",
                         }
+
+  ip_range_to_allow_ingress = ["186.122.9.9/32"]  #put your ip address here to ssh to server
 }
 
 
@@ -31,7 +33,6 @@ provider "aws" {
 }
 
 
-# Include the VPC module
 module "vpc" {
   source = "../../modules/vpc"
   vpc_block = var.vpc_block
@@ -55,8 +56,8 @@ module "securitygroup" {
   source = "../../modules/securitygroup"
   vpc_id                  = module.vpc.vpc_id
   securitygroup_name      = local.securitygroup_name
-  block_allow_ingress     = ["0.0.0.0/0"]
-  default_tags       = local.default_tags
+  block_allow_ingress     = local.ip_range_to_allow_ingress
+  default_tags            = local.default_tags
 }
 
 module "ec2instance" {
